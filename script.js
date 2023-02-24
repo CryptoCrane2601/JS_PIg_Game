@@ -73,3 +73,15 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
+
+// Game reset - New Game
+
+btnNew.addEventListener('click', function () {
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+  if (activePlayer.classList.contains('player--winner')) {
+    console.log('winner');
+  }
+});
